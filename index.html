@@ -10,33 +10,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-        <div class="container">
-            <a class="navbar-brand" href="#home">My Business</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include('components/navbar.html'); ?>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -54,41 +28,23 @@
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-light">
-        <p>&copy; 2024 My Business. All rights reserved.</p>
+        <p>&copy; 2024 My Business. All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Load content from other pages based on the anchor links
-        document.addEventListener('DOMContentLoaded', () => {
-            const contentDiv = document.getElementById('content');
-
-            function loadPage(page) {
-                fetch(`pages/${page}`)
-                    .then(response => {
-                        if (!response.ok) throw new Error('Network response was not ok');
-                        return response.text();
-                    })
+        // Load content dynamically based on section
+        window.onload = function() {
+            const sections = ['home', 'about', 'projects', 'team', 'contact'];
+            sections.forEach(section => {
+                fetch(`pages/${section}.html`)
+                    .then(response => response.text())
                     .then(data => {
-                        contentDiv.innerHTML = data;
-                    })
-                    .catch(error => {
-                        console.error('There was a problem with the fetch operation:', error);
+                        document.getElementById('content').innerHTML += data;
                     });
-            }
-
-            // Load home content by default
-            loadPage('home.html');
-
-            // Add event listeners to navbar links
-            document.querySelectorAll('a.nav-link').forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const page = e.target.getAttribute('href').substring(1) + '.html'; // Get page name
-                    loadPage(page); // Load the corresponding page
-                });
             });
-        });
+        };
     </script>
+
 </body>
 </html>

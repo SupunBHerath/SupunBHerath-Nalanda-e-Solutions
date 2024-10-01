@@ -1,23 +1,28 @@
-html {
-    scroll-behavior: smooth;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
 .hero {
-    background: url('../images/hero-image.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #007bff;
+    padding: 50px 0;
     color: white;
-    text-align: center;
 }
 
-#about, #contact, #projects, #team {
-    padding: 100px 0;
+section {
+    padding: 40px 0;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
 
 footer {
-    background-color: #f8f9fa;
-    padding: 20px;
+    background-color: #343a40;
+    color: white;
 }

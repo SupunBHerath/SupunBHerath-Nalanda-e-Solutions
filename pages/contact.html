@@ -1,16 +1,18 @@
 <section id="contact" class="py-5">
     <div class="container">
         <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out to us!</p>
-        <form action="#" method="POST">
+        <form>
             <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" required>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Your Email" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
             </div>
             <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
