@@ -1,17 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background: url('../images/hero-image.jpg') no-repeat center center;
     background-size: cover;
-    height: 400px;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.services .card {
-    margin-bottom: 20px;
-}
-
-.footer {
-    background-color: #333;
+    align-items: center;
     color: white;
+    text-align: center;
+}
+
+#about, #contact, #projects, #team {
+    padding: 100px 0;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
 }
