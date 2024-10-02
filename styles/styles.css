@@ -123,7 +123,12 @@
   section.projects .card img {
     max-width: 70%; /* Max width for images */
     margin: 1rem auto; /* Center images */
+    object-fit: cover; /* Ensures the image covers the entire container */
+    width: 100%; /* Make the image fill the container width */
+    height: 100px; /* Set a fixed height for the images */
+    border-radius: 10px; /* Optional: Add rounded corners */
   }
+
   
   /* Testimonials Section Styles */
   section.testimonials .carousel-control-prev,
