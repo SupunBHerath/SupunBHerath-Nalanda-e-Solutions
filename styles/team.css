@@ -1,0 +1,20 @@
+.team-section {
+    padding: 60px 0; /* Padding for the section */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.team-section h2 {
+    margin-bottom: 30px; /* Space below the main heading */
+}
+
+.team-section p {
+    margin-bottom: 40px; /* Space below the introductory paragraph */
+}
+
+.card {
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}

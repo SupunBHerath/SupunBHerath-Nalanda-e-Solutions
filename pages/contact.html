@@ -1,20 +1,36 @@
-<section id="contact" class="py-5">
-    <div class="container">
+<section id="contact" data-aos="fade-up" class="contact-section">
+    <div class="container text-center">
         <h2>Contact Us</h2>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
+        <p>If you have any questions or want to work with us, feel free to reach out!</p>
+        <p>Email: <a href="mailto:info@mybusiness.com">info@mybusiness.com</a></p>
+        <p>Phone: <a href="tel:+12345678901">+1 (234) 567-8901</a></p>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
+
+        <div class="mt-5">
+            <h5>Follow Us</h5>
+            <p>Stay connected with us through social media:</p>
+            <a href="https://facebook.com" target="_blank" class="me-2"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="me-2"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
     </div>
 </section>

@@ -1,0 +1,55 @@
+/* Project Card Styles */
+.project-card {
+    position: relative; /* Position relative to enable overlay */
+    overflow: hidden; /* Hide overflow for the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 0, 0, 0.7); /* Semi-transparent background */
+    opacity: 0; /* Initially hide the overlay */
+    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+.project-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-content {
+    padding: 20px;
+}
+
+.overlay-content h5 {
+    font-size: 1.5rem; /* Font size for project title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.overlay-content p {
+    font-size: 1rem; /* Font size for project description */
+}
+
+/* Ensure the card body has a higher z-index than the overlay */
+.card-body {
+    position: relative;
+    z-index: 1; /* Bring the card body above the overlay */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .overlay-content h5 {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .overlay-content p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
