@@ -1337,9 +1337,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 80px; }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px;border-radius: 16px; }
 
   .info-content .name { margin-bottom: 15px; }
 
