@@ -1,55 +1,214 @@
-/* Project Card Styles */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* Colors */
+  --brand-color: hsl(46, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* PROJECT CARD COMPONENT */
+
 .project-card {
-    position: relative; /* Position relative to enable overlay */
-    overflow: hidden; /* Hide overflow for the overlay */
+  display: grid;
+  place-items: center;
+  width: 80vw;
+  max-width: 21.875rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 0, 0, 0.7); /* Semi-transparent background */
-    opacity: 0; /* Initially hide the overlay */
-    transition: opacity 0.3s ease; /* Smooth transition for the overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Text color */
-    text-align: center; /* Center text */
+.project-card > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-.project-card:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
+.project-card__background {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
 }
 
-.overlay-content {
-    padding: 20px;
+.project-card__content {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
 }
 
-.overlay-content h5 {
-    font-size: 1.5rem; /* Font size for project title */
-    margin-bottom: 10px; /* Space below title */
+.project-card__content--container {
+  --flow-space: 1.25rem;
 }
 
-.overlay-content p {
-    font-size: 1rem; /* Font size for project description */
+.project-card__title {
+  position: relative;
+  width: fit-content;
 }
 
-/* Ensure the card body has a higher z-index than the overlay */
-.card-body {
-    position: relative;
-    z-index: 1; /* Bring the card body above the overlay */
+.project-card__title::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
 }
 
-/* Responsive adjustments */
-@media (max-width: 576px) {
-    .overlay-content h5 {
-        font-size: 1.2rem; /* Smaller font size for mobile */
-    }
+.project-card__button {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
 
-    .overlay-content p {
-        font-size: 0.9rem; /* Smaller font size for mobile */
-    }
+.project-card__button:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .project-card__content {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .project-card__title::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .project-card__background {
+    transition: transform 500ms ease-in;
+  }
+
+  .project-card__content--container > :not(.project-card__title),
+  .project-card__button {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .project-card:hover,
+  .project-card:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .project-card:hover .project-card__content,
+  .project-card:focus-within .project-card__content {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .project-card:focus-within .project-card__content {
+    transition-duration: 0ms;
+  }
+
+  .project-card:hover .project-card__background,
+  .project-card:focus-within .project-card__background {
+    transform: scale(1.3);
+  }
+
+  .project-card:hover .project-card__content--container > :not(.project-card__title),
+  .project-card:hover .project-card__button,
+  .project-card:focus-within .project-card__content--container > :not(.project-card__title),
+  .project-card:focus-within .project-card__button {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .project-card:hover .project-card__title::after,
+  .project-card:focus-within .project-card__title::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+/* PROJECTS CONTAINER - LAYOUT */
+
+.projects-container {
+  display: grid;
+  gap: 2rem; /* Space between cards */
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* One card per row on small screens */
+  }
 }
