@@ -165,9 +165,8 @@
   }
 
   .about {
-    background-image: url('../images/about-us.png'); /* Replace with your image URL */
+    background-image: url('../images/bg2.jpg'); /* Replace with your image URL */
     background-size: cover; /* Ensures the background covers the whole section */
-    background-position: center; /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed */
     padding: 4rem 0; /* Adjust the padding as needed */
     color: #fff; /* Change text color for better readability */
