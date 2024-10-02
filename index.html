@@ -2,503 +2,1045 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jane Doe - Portfolio</title>
+    <title>SupunBHerath</title>
+
+    <!--
+    - favicon
+  -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="shortcut icon"
+      href="./assets/images/myphoto.jpg"
+      type="image/x-icon"
     />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/heroStyles.scss" />
-
-    <style>
-      .services .card {
-        text-align: center;
-        border: 1px solid #ddd;
-        transition: transform 0.2s;
-      }
-
-      .services .card:hover {
-        transform: scale(1.05);
-      }
-
-      .about,
-      .projects,
-      .testimonials,
-      .contact {
-        padding: 60px 0;
-      }
-
-      footer {
-        background-color: #e9ecef;
-      }
-    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-light">
-      <div class="container-lg">
-        <a class="navbar-brand fw-bold" href="#">Jane Doe</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#hero"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-lg-none" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <a class="btn btn-outline-dark d-none d-lg-block" href="#contact"
-            >Let's Talk</a
-          >
-        </div>
-      </div>
-    </nav>
+    <!--
+    - #MAIN
+  -->
 
-    <section class="hero" id="hero">
-      <div class="container-lg">
-        <div class="row align-items-center">
-          <div class="col-sm-6">
-            <h2 class="display-4 fw-bold">
-              Welcome to <br />
-              Nalanda E Solutions
-            </h2>
-            <p>
-              Web & Mobile App Development | Video & Photo Editing | Customized
-              E-Solutions
-            </p>
-            <button class="btn btn-outline-dark btn-lg">Projects</button>
-          </div>
-          <div class="col-sm-6 text-center">
-            <img src="./images//h1.svg" class="img-fluid" alt="Jane Doe" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
 
-    
-    <section class="about" id="about">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">About Us</h2>
-        <p>
-          Welcome to NalandaESolutions, where creativity meets innovation. We
-          are a passionate team committed to delivering high-quality projects
-          that make a lasting impact. Our goal is to provide cutting-edge
-          solutions tailored to your unique needs. Whether it's web development,
-          mobile app development, design, or consulting, we strive to exceed
-          expectations and help our clients succeed in a constantly evolving
-          digital landscape.
-        </p>
-        <p>
-          At the core of our mission is a dedication to quality, collaboration,
-          and customer satisfaction. We take pride in building innovative
-          digital solutions that meet the highest standards. Let us help you
-          turn your vision into reality with products and services that truly
-          stand out. Together, we can transform your ideas into something
-          remarkable.
-        </p>
-      </div>
-    </section>
-
-    
-    <section class="services" id="services">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">Services</h2>
-        <div class="row">
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <div class="d-flex justify-content-center pt-2">
-                <img
-                  class="bi bi-cup-hot-fill"
-                  style="font-size: 40px"
-                  src="./images/ui-ux.png"
-                  alt=""
-                  width="100px"
-                  srcset=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title fw-bold">UI UX Design</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <div class="d-flex justify-content-center pt-2">
-                <img
-                  class="bi bi-cup-hot-fill"
-                  style="font-size: 40px"
-                  src="./images/webdesign.png"
-                  alt=""
-                  width="100px"
-                  srcset=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Web Development</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <div class="d-flex justify-content-center pt-2">
-                <img
-                  class="bi bi-cup-hot-fill"
-                  style="font-size: 40px"
-                  src="./images/appDevelopment.png"
-                  alt=""
-                  width="100px"
-                  srcset=""
-                />
-              </div>
-
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Application Development</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="projects" id="projects">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">Our Projects</h2>
-        <div class="row">
-          <div class="card hover-card-effect">
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
             <img
-              src="./images/sasip.png"
-              class="card-img-top"
-              alt="Project Image"
+              src="./assets/images/logo.png"
+              alt="Richard hanrick"
+              width="80"
             />
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Sasip Website</h5>
-              <p class="card-text">Educational website for private sector.</p>
-              <a href="#" class="btn btn-outline-dark">Click to See</a>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="./images/sasip.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Project Title</h5>
-                <p class="card-text">Brief description of the project.</p>
-                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Project Title</h5>
-                <p class="card-text">Brief description of the project.</p>
-                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
-                class="card-img-top"
-                alt="Project Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Project Title</h5>
-                <p class="card-text">Brief description of the project.</p>
-                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </figure>
 
-    <section class="team" id="team">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">Our Team</h2>
-        <div class="row">
-          <!-- Team Member 1 -->
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="./images/about-us.png"
-                class="card-img-top"
-                alt="Team Member Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Supun B Herath</h5>
-                <p class="card-text">Role/Position</p>
-                <a href="#" class="btn btn-outline-dark">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <!-- Team Member 2 -->
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="./images/about-us.png"
-                class="card-img-top"
-                alt="Team Member Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Dhammika Prasad</h5>
-                <p class="card-text">Role/Position</p>
-                <a href="#" class="btn btn-outline-dark">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <!-- Team Member 3 -->
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="./images/about-us.png"
-                class="card-img-top"
-                alt="Team Member Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Team Member Name</h5>
-                <p class="card-text">Role/Position</p>
-                <a href="#" class="btn btn-outline-dark">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <!-- Team Member 4 -->
-          <div class="col-lg col-sm-6 mt-4">
-            <div class="card">
-              <img
-                src="./images/about-us.png"
-                class="card-img-top"
-                alt="Team Member Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Team Member Name</h5>
-                <p class="card-text">Role/Position</p>
-                <a href="#" class="btn btn-outline-dark">Learn more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Nalanda E-Solutions</h1>
 
-    <section class="testimonials" id="testimonials">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">Testimonials</h2>
-        <div
-          id="carouselExample"
-          class="carousel slide carousel-dark carousel-fade"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p>
-                "NalandaESolutions exceeded our expectations in every way. Their
-                attention to detail, creativity, and professionalism helped us
-                bring our vision to life. The team was always available,
-                providing clear communication and delivering top-quality
-                results. Highly recommend!."
-              </p>
-              <h5>Sasitha Supun Himansa, CEO of NalandaESolutions</h5>
-            </div>
-            <div class="carousel-item">
-              <p>
-                "Working with NalandaESolutions was a game-changer for our
-                business. From website development to mobile app solutions,
-                their expertise transformed our digital presence. They are
-                reliable, innovative, and a pleasure to work with."
-              </p>
-              <h5>Jane Smith</h5>
-            </div>
-            <div class="carousel-item">
-              <p>
-                "The NalandaESolutions team was fantastic from start to finish.
-                They took the time to understand our unique needs and delivered
-                a product that not only met but exceeded our expectations. Their
-                mobile app development skills are top-notch, and we couldn’t be
-                happier with the results!."
-              </p>
-              <h5>Michael Brown</h5>
-            </div>
+            <p class="title">FULL-STACK DEVELOPERS</p>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
-      </div>
-    </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark">Send Message</button>
-        </form>
-      </div>
-    </section>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-    <footer class="text-center text-lg-start bg-dark mt-5">
-      <div class="container p-4">
-        <div class="row">
-          <!-- About Section -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase fw-bold text-light">About Us</h5>
-            <p class="text-light">
-              We are a passionate team dedicated to delivering high-quality
-              projects and services. Our focus is on providing the best
-              solutions tailored to your needs.
-            </p>
-          </div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-          <!-- Useful Links with Icons -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase fw-bold text-light">Quick Links</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#about" class="text-light">
-                  <i class="fas fa-info-circle me-2 text-primary"></i>About
-                </a>
-              </li>
-              <li>
-                <a href="#services" class="text-light">
-                  <i class="fas fa-cogs me-2 text-primary"></i>Services
-                </a>
-              </li>
-              <li>
-                <a href="#projects" class="text-light">
-                  <i class="fas fa-briefcase me-2 text-primary"></i>Projects
-                </a>
-              </li>
-              <li>
-                <a href="#contact" class="text-light">
-                  <i class="fas fa-envelope me-2 text-primary"></i>Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-          <!-- Contact Section -->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase fw-bold text-light">Contact Us</h5>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fas fa-envelope me-2 text-primary"></i>
-                <a href="mailto:info@example.com" class="text-light"
+                <a href="mailto:supunbherath@gmail.com" class="contact-link"
                   >nalandaesolutions@gmail.com</a
                 >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+94782503387" class="contact-link"
+                  >+94 78 250 33 87</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Start </p>
+
+                <time datetime="2024">2024</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Nalanda IUHS Campus , Thiththagalla , Galle </address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About Us </h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Nalanda E-Solutions <br />
+              <br />
+              At Nalanda E Solutions, we specialize in providing high-quality
+              web design, mobile app development, and creative services like
+              video and photo editing. Our goal is to deliver affordable,
+              customized solutions that help your business stand out and grow in
+              the digital world.
+            </p>
+            <br />
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What we are  doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI UX  design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
               </li>
-              <li class="text-light">
-                <i class="fas fa-phone me-2 text-primary"></i> +123 456 7890
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
               </li>
-              <li class="text-light">
-                <i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Main
-                Street, City, Country
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Apps development</h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Hosting </h4>
+
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
               </li>
             </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!-- <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="  Tharushi Rubasinghe"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Tharushi Rubasinghe
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Tharushi Rubasinghe is an Assistant Lecturer at the
+                      Department of Information Technology, SLIIT, Malabe
+                      Campus, Sri Lanka. You can reach her via email at
+                      tharushi.r@sliit.lk.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Lahiru Vithanage
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Senior Software Engineer ChatGPT said: ChatGPT Lahiru
+                      Vithanage is a Senior Software Engineer at Pagero. You can
+                      contact him via email at lahiru.vithanage@pagero.com.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section> -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="" alt="" width="80" data-modal-img />
+                </figure>
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2024-09-28">28 Sept, 2024</time>
+
+                <div data-modal-text>
+                  <p></p>
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <hr class="bg-light w-100 mx-auto" style="height: 3px; border: none" />
-      </div>
 
-      <!-- Social Media Links -->
-      <div class="text-center bg-dark text-white p-3">
-        <div class="mb-3">
-          <a href="#" class="me-4 text-decoration-none">
-            <i class="fab fa-facebook-f text-primary"></i>
-          </a>
-          <a href="#" class="me-4 text-decoration-none">
-            <i class="fab fa-twitter text-info"></i>
-          </a>
-          <a href="#" class="me-4 text-decoration-none">
-            <i class="fab fa-instagram" style="color: #c13584"></i>
-          </a>
-          <a href="#" class="me-4 text-decoration-none">
-            <i class="fab fa-linkedin-in text-primary"></i>
-          </a>
-        </div>
-        <p class="mb-0">&copy; 2024 NalandaESolutions. All rights reserved.</p>
-      </div>
-    </footer>
+          <!--
+          - clients
+        -->
+          <!-- 
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section> -->
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  DIPLOMA IN COMPUTER SCIENCE
+                </h4>
+
+                <span>2022 — 2024</span>
+
+                <p class="timeline-text">
+                  INSTITUTE OF UNIVERSAL HIGHER STUDIES
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">CERTIFIED DEVELOPER</h4>
+
+                <span>2023 — 2024</span>
+
+                <p class="timeline-text">
+                  INSTITUTE OF COMPUTER ENGINEERING TECHNOLOGY
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">MATH STREAM</h4>
+
+                <span>2017 — 2019</span>
+
+                <p class="timeline-text">VIJAYABA NATIONAL COLLEGE</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">EXTRA CURICULAR ACTIVITIES</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Media Team Member</h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Collaborated with a team to promote events and initiatives,
+                  utilizing various media platforms to enhance outreach.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Plant Protection Organization Team Member
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Worked on initiatives related to environmental conservation,
+                  contributing to awareness and action on plant protection
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Organizer for Earth Summit at BMICH
+                </h4>
+
+                <span>2024</span>
+
+                <p class="timeline-text">
+                  Played a key role in organizing the Earth Summit, coordinating
+                  team members and managing logistics for a successful event.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">TECHNICAL SKILL</h3>
+
+            <ul class="skills-list content-card">
+              <h4 class="h5">Programming Languages</h4>
+              <br />
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">PHP</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">TypeScript</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://orangered-quail-934133.hostingersite.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/sasipweb.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">SASIP Website</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://tutornet-new-supunbheraths-projects.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/tutornetweb.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">TUTORNET Website</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <!-- 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <!-- <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article> -->
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5378.830912093025!2d80.25380447768086!3d7.818722726286069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1727496369549!5m2!1sen!2slk"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
