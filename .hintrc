@@ -8,6 +8,8 @@
       {
         "button-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "disown-opener": "off"
   }
 }
