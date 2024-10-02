@@ -1,3 +1,11 @@
+/* new style  */
+
+/* new style end  */
+
+
+// Media Query Breakpoint
+
+
 :root {
     --accent-color: #f5a841; /* Primary accent color */
   }
@@ -76,6 +84,7 @@
   section.hero {
      /* Space for the top of the hero section */
   }
+  
   
   @media screen and (max-width: 576px) {
     section.hero {

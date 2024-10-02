@@ -1,366 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/heroStyles.scss" />
 
     <style>
-      
+      .services .card {
+        text-align: center;
+        border: 1px solid #ddd;
+        transition: transform 0.2s;
+      }
 
-        .services .card {
-            text-align: center;
-            border: 1px solid #ddd;
-            transition: transform 0.2s;
-        }
+      .services .card:hover {
+        transform: scale(1.05);
+      }
 
-        .services .card:hover {
-            transform: scale(1.05);
-        }
+      .about,
+      .projects,
+      .testimonials,
+      .contact {
+        padding: 60px 0;
+      }
 
-        .about,
-        .projects,
-        .testimonials,
-        .contact {
-            padding: 60px 0;
-        }
-
-        footer {
-            background-color: #e9ecef;
-        }
+      footer {
+        background-color: #e9ecef;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-light">
-        <div class="container-lg">
-            <a class="navbar-brand fw-bold" href="#">Jane Doe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-lg-none" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <a class="btn btn-outline-dark d-none d-lg-block" href="#contact">Let's Talk</a>
-            </div>
+      <div class="container-lg">
+        <a class="navbar-brand fw-bold" href="#">Jane Doe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-dark d-none d-lg-block" href="#contact"
+            >Let's Talk</a
+          >
         </div>
+      </div>
     </nav>
 
+ 
+
     <section class="hero" id="hero">
-        <div class="container-lg ">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <h2 class="display-4 fw-bold">Nalanda E-Solutions</h2>
-                    <p>
-                    </p>
-                    <button class="btn btn-outline-dark btn-lg">Projects</button>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <img src="./images//h1.svg" class="img-fluid" alt="Jane Doe">
-                </div>
-            </div>
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-sm-6">
+            <h2 class="display-4 fw-bold">
+              Welcome to <br />
+              Nalanda E Solutions
+            </h2>
+            <p>
+              Web & Mobile App Development | Video & Photo Editing | Customized
+              E-Solutions
+            </p>
+            <button class="btn btn-outline-dark btn-lg">Projects</button>
+          </div>
+          <div class="col-sm-6 text-center">
+            <img src="./images//h1.svg" class="img-fluid" alt="Jane Doe" />
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="services" id="services">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Services</h2>
-            <div class="row">
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <i class="bi bi-cup-hot-fill" style="font-size: 40px;"></i>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Service Title</h5>
-                            <p class="card-text">Brief description of the service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <i class="bi bi-cup-hot-fill" style="font-size: 40px;"></i>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Service Title</h5>
-                            <p class="card-text">Brief description of the service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-sm-6 m-auto mt-4">
-                    <div class="card">
-                        <i class="bi bi-cup-hot-fill" style="font-size: 40px;"></i>
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Service Title</h5>
-                            <p class="card-text">Brief description of the service.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Services</h2>
+        <div class="row">
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <i class="bi bi-cup-hot-fill" style="font-size: 40px"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Service Title</h5>
+                <p class="card-text">Brief description of the service.</p>
+              </div>
             </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <i class="bi bi-cup-hot-fill" style="font-size: 40px"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Service Title</h5>
+                <p class="card-text">Brief description of the service.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 m-auto mt-4">
+            <div class="card">
+              <i class="bi bi-cup-hot-fill" style="font-size: 40px"></i>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Service Title</h5>
+                <p class="card-text">Brief description of the service.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="about" id="about">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">About Us</h2>
-            <p>Welcome to NalandaESolutions, where creativity meets innovation. We are a passionate team committed to delivering high-quality projects that make a lasting impact. Our goal is to provide cutting-edge solutions tailored to your unique needs. Whether it's web development, mobile app development, design, or consulting, we strive to exceed expectations and help our clients succeed in a constantly evolving digital landscape.</p>
-            <p>At the core of our mission is a dedication to quality, collaboration, and customer satisfaction. We take pride in building innovative digital solutions that meet the highest standards. Let us help you turn your vision into reality with products and services that truly stand out. Together, we can transform your ideas into something remarkable.</p>
-        </div>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">About Us</h2>
+        <p>
+          Welcome to NalandaESolutions, where creativity meets innovation. We
+          are a passionate team committed to delivering high-quality projects
+          that make a lasting impact. Our goal is to provide cutting-edge
+          solutions tailored to your unique needs. Whether it's web development,
+          mobile app development, design, or consulting, we strive to exceed
+          expectations and help our clients succeed in a constantly evolving
+          digital landscape.
+        </p>
+        <p>
+          At the core of our mission is a dedication to quality, collaboration,
+          and customer satisfaction. We take pride in building innovative
+          digital solutions that meet the highest standards. Let us help you
+          turn your vision into reality with products and services that truly
+          stand out. Together, we can transform your ideas into something
+          remarkable.
+        </p>
+      </div>
     </section>
 
     <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Projects</h2>
-            <div class="row">
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Project Title</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Project Title</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Project Title</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Project Title</h5>
-                            <p class="card-text">Brief description of the project.</p>
-                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
+                class="card-img-top"
+                alt="Project Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <p class="card-text">Brief description of the project.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
+                class="card-img-top"
+                alt="Project Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <p class="card-text">Brief description of the project.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
+                class="card-img-top"
+                alt="Project Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <p class="card-text">Brief description of the project.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="https://codingyaar.com/wp-content/uploads/image-plcaeholder.png"
+                class="card-img-top"
+                alt="Project Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Project Title</h5>
+                <p class="card-text">Brief description of the project.</p>
+                <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="team" id="team">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Our Team</h2>
-            <div class="row">
-                <!-- Team Member 1 -->
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="./images/about-us.png" class="card-img-top" alt="Team Member Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Supun B Herath</h5>
-                            <p class="card-text">Role/Position</p>
-                            <a href="#" class="btn btn-outline-dark">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team Member 2 -->
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="./images/about-us.png" class="card-img-top" alt="Team Member Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Dhammika Prasad</h5>
-                            <p class="card-text">Role/Position</p>
-                            <a href="#" class="btn btn-outline-dark">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team Member 3 -->
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="./images/about-us.png" class="card-img-top" alt="Team Member Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Team Member Name</h5>
-                            <p class="card-text">Role/Position</p>
-                            <a href="#" class="btn btn-outline-dark">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Team Member 4 -->
-                <div class="col-lg col-sm-6 mt-4">
-                    <div class="card">
-                        <img src="./images/about-us.png" class="card-img-top" alt="Team Member Image">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Team Member Name</h5>
-                            <p class="card-text">Role/Position</p>
-                            <a href="#" class="btn btn-outline-dark">Learn more</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Our Team</h2>
+        <div class="row">
+          <!-- Team Member 1 -->
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="./images/about-us.png"
+                class="card-img-top"
+                alt="Team Member Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Supun B Herath</h5>
+                <p class="card-text">Role/Position</p>
+                <a href="#" class="btn btn-outline-dark">Learn more</a>
+              </div>
             </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="./images/about-us.png"
+                class="card-img-top"
+                alt="Team Member Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Dhammika Prasad</h5>
+                <p class="card-text">Role/Position</p>
+                <a href="#" class="btn btn-outline-dark">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="./images/about-us.png"
+                class="card-img-top"
+                alt="Team Member Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Team Member Name</h5>
+                <p class="card-text">Role/Position</p>
+                <a href="#" class="btn btn-outline-dark">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="col-lg col-sm-6 mt-4">
+            <div class="card">
+              <img
+                src="./images/about-us.png"
+                class="card-img-top"
+                alt="Team Member Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Team Member Name</h5>
+                <p class="card-text">Role/Position</p>
+                <a href="#" class="btn btn-outline-dark">Learn more</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
 
     <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Testimonials</h2>
-            <div id="carouselExample" class="carousel slide carousel-dark carousel-fade">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p>"NalandaESolutions exceeded our expectations in every way. Their attention to detail, creativity, and professionalism helped us bring our vision to life. The team was always available, providing clear communication and delivering top-quality results. Highly recommend!." </p>
-                        <h5>Sasitha Supun Himansa, CEO of NalandaESolutions</h5>
-                    </div>
-                    <div class="carousel-item">
-                        <p>"Working with NalandaESolutions was a game-changer for our business. From website development to mobile app solutions, their expertise transformed our digital presence. They are reliable, innovative, and a pleasure to work with."</p>
-                        <h5>Jane Smith</h5>
-                    </div>
-                    <div class="carousel-item">
-                        <p>"The NalandaESolutions team was fantastic from start to finish. They took the time to understand our unique needs and delivered a product that not only met but exceeded our expectations. Their mobile app development skills are top-notch, and we couldn’t be happier with the results!."</p>
-                        <h5>Michael Brown</h5>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Testimonials</h2>
+        <div
+          id="carouselExample"
+          class="carousel slide carousel-dark carousel-fade"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>
+                "NalandaESolutions exceeded our expectations in every way. Their
+                attention to detail, creativity, and professionalism helped us
+                bring our vision to life. The team was always available,
+                providing clear communication and delivering top-quality
+                results. Highly recommend!."
+              </p>
+              <h5>Sasitha Supun Himansa, CEO of NalandaESolutions</h5>
             </div>
+            <div class="carousel-item">
+              <p>
+                "Working with NalandaESolutions was a game-changer for our
+                business. From website development to mobile app solutions,
+                their expertise transformed our digital presence. They are
+                reliable, innovative, and a pleasure to work with."
+              </p>
+              <h5>Jane Smith</h5>
+            </div>
+            <div class="carousel-item">
+              <p>
+                "The NalandaESolutions team was fantastic from start to finish.
+                They took the time to understand our unique needs and delivered
+                a product that not only met but exceeded our expectations. Their
+                mobile app development skills are top-notch, and we couldn’t be
+                happier with the results!."
+              </p>
+              <h5>Michael Brown</h5>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Send Message</button>
-            </form>
-        </div>
+      <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <footer class="text-center text-lg-start bg-light mt-5">
-        <div class="container p-4">
-            <div class="row">
-                <!-- About Section -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase fw-bold">About Us</h5>
-                    <p>
-                        We are a passionate team dedicated to delivering high-quality projects and services. Our focus is on providing the best solutions tailored to your needs.
-                    </p>
-                </div>
-    
-                <!-- Useful Links with Icons -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase fw-bold">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#about" class="text-dark">
-                                <i class="fas fa-info-circle me-2"></i>About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services" class="text-dark">
-                                <i class="fas fa-cogs me-2"></i>Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="text-dark">
-                                <i class="fas fa-briefcase me-2"></i>Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="text-dark">
-                                <i class="fas fa-envelope me-2"></i>Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Contact Section -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase fw-bold">Contact Us</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <i class="fas fa-envelope me-2"></i>
-                            <a href="mailto:info@example.com" class="text-dark">info@example.com</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone me-2"></i> +123 456 7890
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, City, Country
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container p-4">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase fw-bold">About Us</h5>
+            <p>
+              We are a passionate team dedicated to delivering high-quality
+              projects and services. Our focus is on providing the best
+              solutions tailored to your needs.
+            </p>
+          </div>
+
+          <!-- Useful Links with Icons -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#about" class="text-dark">
+                  <i class="fas fa-info-circle me-2"></i>About
+                </a>
+              </li>
+              <li>
+                <a href="#services" class="text-dark">
+                  <i class="fas fa-cogs me-2"></i>Services
+                </a>
+              </li>
+              <li>
+                <a href="#projects" class="text-dark">
+                  <i class="fas fa-briefcase me-2"></i>Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="text-dark">
+                  <i class="fas fa-envelope me-2"></i>Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase fw-bold">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-envelope me-2"></i>
+                <a href="mailto:info@example.com" class="text-dark"
+                  >info@example.com</a
+                >
+              </li>
+              <li><i class="fas fa-phone me-2"></i> +123 456 7890</li>
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> 123 Main Street,
+                City, Country
+              </li>
+            </ul>
+          </div>
         </div>
-    
-        <!-- Social Media Links -->
-        <div class="text-center bg-dark text-white p-3">
-            <div class="mb-3">
-                <a href="#" class="text-white me-4">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="text-white me-4">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="text-white me-4">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="text-white me-4">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            <p class="mb-0">&copy; 2024 Jane Doe. All rights reserved.</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="text-center bg-dark text-white p-3">
+        <div class="mb-3">
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white me-4">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
+        <p class="mb-0">&copy; 2024 Jane Doe. All rights reserved.</p>
+      </div>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
