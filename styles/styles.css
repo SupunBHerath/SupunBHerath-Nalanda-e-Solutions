@@ -23,7 +23,7 @@
   
   /* Alternating background color for even sections */
   section:nth-child(2n) {
-    background-color: #ecf2ff; /* Light blue background */
+    background-color: #ffffff; /* Light blue background */
   }
   
   /* Link Styles */
@@ -74,7 +74,7 @@
   
   /* Hero Section Styles */
   section.hero {
-    padding-top: 72px; /* Space for the top of the hero section */
+     /* Space for the top of the hero section */
   }
   
   @media screen and (max-width: 576px) {
