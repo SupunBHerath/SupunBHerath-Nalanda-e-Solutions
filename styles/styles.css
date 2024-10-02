@@ -177,35 +177,35 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-}
+  }
 
-.hover-card-effect::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -100%; /* Start off-screen */
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent effect */
-    transition: right 0.4s ease-in-out; /* Smooth sliding effect */
-}
+  .hover-card-effect::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -100%; /* Start off-screen */
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent effect */
+      transition: right 0.4s ease-in-out; /* Smooth sliding effect */
+  }
 
-.hover-card-effect:hover::before {
-    right: 0; /* Slide in from the right on hover */
-}
+  .hover-card-effect:hover::before {
+      right: 0; /* Slide in from the right on hover */
+  }
 
-.hover-card-effect img {
-    transition: transform 0.4s ease-in-out;
-}
+  .hover-card-effect img {
+      transition: transform 0.4s ease-in-out;
+  }
 
-.hover-card-effect:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
+  .hover-card-effect:hover img {
+      transform: scale(1.05); /* Slight zoom on hover */
+  }
 
-.hover-card-effect .card-body {
-    position: relative;
-    z-index: 2; /* Ensure the card content is above the sliding effect */
-}
+  .hover-card-effect .card-body {
+      position: relative;
+      z-index: 2; /* Ensure the card content is above the sliding effect */
+  }
 
 
 
