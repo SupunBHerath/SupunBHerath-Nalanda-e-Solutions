@@ -102,12 +102,9 @@
   }
   
   section .card {
-    width: 22rem; /* Fixed card width */
-    height: 20rem; /* Fixed card height */
+    max-width: 22rem; /* Maximum card width */
     margin-inline: auto; /* Center cards */
-    overflow: hidden; /* Hide overflow for content exceeding the height */
-}
-
+  }
   
   /* About Section Styles */
   @media screen and (min-width: 1024px) {
