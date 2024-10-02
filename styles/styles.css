@@ -165,8 +165,9 @@
   }
 
   .about {
-    background-image: url('../images/bg2.jpg'); /* Replace with your image URL */
+    background-image: url('../images/about-us.png'); /* Replace with your image URL */
     background-size: cover; /* Ensures the background covers the whole section */
+    background-position: center; /* Centers the background image */
     background-attachment: fixed; /* Keeps the background image fixed */
     padding: 4rem 0; /* Adjust the padding as needed */
     color: #fff; /* Change text color for better readability */
@@ -176,36 +177,75 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  .hover-card-effect::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -100%; /* Start off-screen */
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent effect */
-      transition: right 0.4s ease-in-out; /* Smooth sliding effect */
-  }
+.hover-card-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(196, 212, 169, 0.2); /* Semi-transparent overlay */
+    border: 2px solid transparent; /* Transparent border initially */
+    z-index: 1; /* Ensure it's behind card content */
+    transition: background-color 0.5s ease-in-out; /* Smooth background transition */
+    box-sizing: border-box;
+}
 
-  .hover-card-effect:hover::before {
-      right: 0; /* Slide in from the right on hover */
-  }
+.hover-card-effect:hover::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Darken the overlay on hover */
+    border-color: gold; /* Apply gold border on hover */
+}
 
-  .hover-card-effect img {
-      transition: transform 0.4s ease-in-out;
-  }
+.hover-card-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid gold; /* Gold border */
+    z-index: 2;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation: shine-border 1.5s linear infinite; /* Continuous shining border animation */
+}
 
-  .hover-card-effect:hover img {
-      transform: scale(1.05); /* Slight zoom on hover */
-  }
+.hover-card-effect:hover::after {
+    opacity: 1; /* Show the shining border on hover */
+}
 
-  .hover-card-effect .card-body {
-      position: relative;
-      z-index: 2; /* Ensure the card content is above the sliding effect */
-  }
+.hover-card-effect img {
+    transition: transform 0.4s ease-in-out;
+    z-index: 0; /* Keep the image behind content */
+}
 
+.hover-card-effect:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
+.hover-card-effect .card-body {
+    position: relative;
+    z-index: 3; /* Keep card content above everything */
+}
 
-  
+/* Keyframes for the shine-border animation */
+@keyframes shine-border {
+    0% {
+        clip-path: inset(0 100% 100% 0);
+    }
+    25% {
+        clip-path: inset(0 0 100% 0);
+    }
+    50% {
+        clip-path: inset(0 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        clip-path: inset(0 100% 100% 0);
+    }
+}
